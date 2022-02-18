@@ -41,7 +41,7 @@ function Get-Channel {
             return $ret
         } else {
             Write-Error "Failed to get channel, Error: $($res.error_code)"
-            return $false
+            return $null
         }
     }
 }

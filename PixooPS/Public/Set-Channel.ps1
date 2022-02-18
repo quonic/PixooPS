@@ -21,8 +21,8 @@ function Set-Channel {
     .NOTES
     General notes
     #>
-    [CmdletBinding()]
-    [OutputType([int])]
+    [CmdletBinding(SupportsShouldProcess)]
+    [OutputType([boolean])]
     param(
         [Parameter()]
         [string]
@@ -53,14 +53,16 @@ function Set-Channel {
             Command     = "Channel/SetIndex"
             SelectIndex = $Index
         } | ConvertTo-Json -Compress
-
-        $res = Invoke-RestMethod -Method Post -Uri "http://$DeviceIP/post" -Body $Body
-        if ($res.error_code -and $res.error_code -eq 0) {
-            Write-Verbose "Success"
-            return $true
-        } else {
-            Write-Error "Failed to set channel"
-            return $false
+        if ($PSCmdlet.ShouldProcess("$DeviceIP", "Set Channel to $Index")) {
+            $res = Invoke-RestMethod -Method Post -Uri "http://$DeviceIP/post" -Body $Body
+            if ($res.error_code -and $res.error_code -eq 0) {
+                Write-Verbose "Success"
+                return $true
+            } else {
+                Write-Error "Failed to set channel"
+                return $false
+            }
         }
+        return $false
     }
 }

@@ -18,6 +18,7 @@ function Invoke-PlayGif {
     .NOTES
     General notes
     #>
+    [OutputType([Boolean])]
     [CmdletBinding()]
     param(
         [Parameter()]

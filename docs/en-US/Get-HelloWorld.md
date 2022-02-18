@@ -5,45 +5,42 @@ online version:
 schema: 2.0.0
 ---
 
-# Find-Pixoo
+# Get-HelloWorld
 
 ## SYNOPSIS
-
-Finds the IP address of any Pixoo64 device on the local network
+Returns Hello world
 
 ## SYNTAX
 
 ```
-Find-Pixoo [[-IPAddress] <Object>] [<CommonParameters>]
+Get-HelloWorld [[-Value] <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-
-Finds the IP address of any Pixoo64 device on the local network
+Returns Hello world
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-
-```powershell
-Find-Pixoo
 ```
+Get-HelloWorld
+```
+
+Runs the command
 
 ## PARAMETERS
 
-### -IPAddress
-
-Specify only if you already know what the IP address is
-Can also be used to verify that the specified IP address is a Pixoo64 device
+### -Value
+Parameter description can go here or above in format: .PARAMETER  \<Parameter-Name\>
 
 ```yaml
-Type: Object
+Type: String
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: 1
-Default value: None
+Default value: GetHelloWorld
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -55,8 +52,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
+### System.String
 ## NOTES
-
-General notes
 
 ## RELATED LINKS

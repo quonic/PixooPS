@@ -56,7 +56,7 @@ function Find-Pixoo {
                     }
                     break
                 } catch {
-                    #
+                    Write-Error $Error[0]
                 }
             }
         }

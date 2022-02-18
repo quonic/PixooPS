@@ -24,6 +24,7 @@ function Set-Screen {
     .NOTES
     General notes
     #>
+    [CmdletBinding(SupportsShouldProcess)]
     param (
         [Parameter()]
         [string]
@@ -43,9 +44,12 @@ function Set-Screen {
             Command = "Channel/OnOffScreen"
             OnOff   = if ($On) { 1 }elseif ($Off) { 0 }else { throw "On and Off not specified?!" }
         } | ConvertTo-Json -Compress
-        $res = Invoke-RestMethod -Method Post -Uri "http://$DeviceIP/post" -Body $Body
-        if ($res.error_code -eq 1) {
-            throw "Pixoo64 returned error_code of $($res.error_code)"
+        if ($PSCmdlet.ShouldProcess("$DeviceIP", "Turn screen $(if ($On) { "On" }elseif ($Off) { "Off" }else{"Error"})")) {
+            $res = Invoke-RestMethod -Method Post -Uri "http://$DeviceIP/post" -Body $Body
+            if ($res.error_code -eq 1) {
+                throw "Pixoo64 returned error_code of $($res.error_code)"
+            }
         }
+
     }
 }

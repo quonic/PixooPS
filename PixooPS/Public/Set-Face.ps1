@@ -19,7 +19,8 @@ function Set-Face {
     .NOTES
     General notes
     #>
-    [CmdletBinding()]
+    [OutputType([boolean])]
+    [CmdletBinding(SupportsShouldProcess)]
     param (
         [Parameter(Mandatory = $true)]
         [int]
@@ -36,14 +37,16 @@ function Set-Face {
             Command = "Channel/SetClockSelectId"
             ClockId = $FaceId
         } | ConvertTo-Json -Compress
-
-        $res = Invoke-RestMethod -Method Post -Uri "http://$DeviceIP/post" -Body $Body
-        if ($res.error_code -eq 0) {
-            Write-Verbose "Success"
-            return $true
-        } else {
-            Write-Error "Failed to set Face, Error: $($res.error_code)"
-            return $false
+        if ($PSCmdlet.ShouldProcess("$DeviceIP", "Set Face to $FaceId")) {
+            $res = Invoke-RestMethod -Method Post -Uri "http://$DeviceIP/post" -Body $Body
+            if ($res.error_code -eq 0) {
+                Write-Verbose "Success"
+                return $true
+            } else {
+                Write-Error "Failed to set Face, Error: $($res.error_code)"
+                return $false
+            }
         }
+        return $false
     }
 }

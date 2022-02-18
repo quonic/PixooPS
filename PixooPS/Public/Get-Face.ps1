@@ -34,7 +34,7 @@ function Get-Face {
             return $ret
         } else {
             Write-Error "Failed to set Face, Error: $($res.error_code)"
-            return $false
+            return $null
         }
     }
 }
