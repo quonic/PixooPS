@@ -1,4 +1,5 @@
-site_name: https://github.com/quonic/PixooPS.git
+site_name: https://quonic.github.io/PixooPS/
 repo_url: https://github.com/quonic/PixooPS.git
 theme: readthedocs
-
+remote_name: origin
+remote_branch: pages
