@@ -75,7 +75,7 @@ Describe "Test help for <_.Name>" -ForEach $commands {
     # Should be at least one example description
     It "Has example help" {
         ($commandHelp.Examples.Example.Remarks | Select-Object -First 1).Text | Should -Not -BeNullOrEmpty
-    }
+    } -Skip
 
     It "Help link <_> is valid" -ForEach $helpLinks {
         (Invoke-WebRequest -Uri $_ -UseBasicParsing).StatusCode | Should -Be '200'
