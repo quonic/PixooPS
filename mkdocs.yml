@@ -7,5 +7,4 @@ remote_name: origin
 remote_branch: pages
 site_description: "A PowerShell module to control Pixoo64 devices"
 site_author: "Quonic/Spyingwind"
-use_directory_urls: true
-docs_dir: docs/en-US/
+use_directory_urls: false
