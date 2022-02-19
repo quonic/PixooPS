@@ -6,25 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  
-  
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Get-HelloWorld - https://github.com/quonic/PixooPS.git</title>
+  <meta name="author" content="Quonic/Spyingwind">
+  <link rel="canonical" href="https://quonic.github.io/PixooPS/en-US/Invoke-PlayGif.html">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Invoke-PlayGif - PixooPS</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../../css/theme.css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Get-HelloWorld";
-    var mkdocs_page_input_path = "en-US\\Get-HelloWorld.md";
-    var mkdocs_page_url = null;
+    var mkdocs_page_name = "Invoke-PlayGif";
+    var mkdocs_page_input_path = "en-US\\Invoke-PlayGif.md";
+    var mkdocs_page_url = "/PixooPS/en-US/Invoke-PlayGif.html";
   </script>
   
-  <script src="../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
 </head>
@@ -37,28 +37,32 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> https://github.com/quonic/PixooPS.git</a>
+        <a href="../index.html" class="icon icon-home"> PixooPS</a>
         <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../index.html">PixooPS</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">en US</span></p>
                 <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../Find-Pixoo/">Find-Pixoo</a>
+                    <li class="toctree-l1"><a class="reference internal" href="Find-Pixoo.html">Find-Pixoo</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Get-Channel/">Get-Channel</a>
+                    <li class="toctree-l1"><a class="reference internal" href="Get-Channel.html">Get-Channel</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Get-Face/">Get-Face</a>
+                    <li class="toctree-l1"><a class="reference internal" href="Get-Face.html">Get-Face</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Get-FaceList/">Get-FaceList</a>
+                    <li class="toctree-l1"><a class="reference internal" href="Get-FaceList.html">Get-FaceList</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Get-FaceType/">Get-FaceType</a>
+                    <li class="toctree-l1"><a class="reference internal" href="Get-FaceType.html">Get-FaceType</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Get-HelloWorld</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="Invoke-PlayGif.html">Invoke-PlayGif</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#synopsis">SYNOPSIS</a>
     </li>
@@ -74,7 +78,9 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#parameters">PARAMETERS</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#-value">-Value</a>
+    <li class="toctree-l3"><a class="reference internal" href="#-deviceip">-DeviceIP</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#-urlgif">-UrlGif</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#commonparameters">CommonParameters</a>
     </li>
@@ -83,10 +89,6 @@
     <li class="toctree-l2"><a class="reference internal" href="#inputs">INPUTS</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#outputs">OUTPUTS</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#systemstring">System.String</a>
-    </li>
-        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#notes">NOTES</a>
     </li>
@@ -94,15 +96,13 @@
     </li>
     </ul>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Invoke-PlayGif/">Invoke-PlayGif</a>
+                    <li class="toctree-l1"><a class="reference internal" href="Set-Channel.html">Set-Channel</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Set-Channel/">Set-Channel</a>
+                    <li class="toctree-l1"><a class="reference internal" href="Set-Face.html">Set-Face</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Set-Face/">Set-Face</a>
+                    <li class="toctree-l1"><a class="reference internal" href="Set-Screen.html">Set-Screen</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Set-Screen/">Set-Screen</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../about_PixooPS.help/">PixooPS</a>
+                    <li class="toctree-l1"><a class="reference internal" href="about_PixooPS.help.html">About_PixooPS</a>
                     </li>
                 </ul>
       </div>
@@ -114,7 +114,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">https://github.com/quonic/PixooPS.git</a>
+        <a href="../index.html">PixooPS</a>
       </nav>
 
       
@@ -122,7 +122,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
+    <li><a href="../index.html">Docs</a> &raquo;</li>
     
       
         
@@ -130,10 +130,10 @@
         
       
     
-    <li>Get-HelloWorld</li>
+    <li>Invoke-PlayGif</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/quonic/PixooPS.git/edit/master/docs/en-US/Get-HelloWorld.md"
+        <a href="https://github.com/quonic/PixooPS/edit/master/docs/en-US/Invoke-PlayGif.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -145,29 +145,40 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="get-helloworld">Get-HelloWorld</h1>
+                <h1 id="invoke-playgif">Invoke-PlayGif</h1>
 <h2 id="synopsis">SYNOPSIS</h2>
-<p>Returns Hello world</p>
+<p>Sends a link to a gif, from an http site, to a Pixoo64 device.</p>
 <h2 id="syntax">SYNTAX</h2>
-<pre><code>Get-HelloWorld [[-Value] &lt;String&gt;] [&lt;CommonParameters&gt;]
+<pre><code>Invoke-PlayGif [[-DeviceIP] &lt;String&gt;] [-UrlGif] &lt;String&gt; [&lt;CommonParameters&gt;]
 </code></pre>
 <h2 id="description">DESCRIPTION</h2>
-<p>Returns Hello world</p>
+<p>Sends a link to a gif, from an http site, to a Pixoo64 device.</p>
 <h2 id="examples">EXAMPLES</h2>
 <h3 id="example-1">EXAMPLE 1</h3>
-<pre><code>Get-HelloWorld
+<pre><code>Invoke-PlayGif -Url &quot;http://example.com/MyAnimation.gif&quot;
 </code></pre>
-<p>Runs the command</p>
 <h2 id="parameters">PARAMETERS</h2>
-<h3 id="-value">-Value</h3>
-<p>Parameter description can go here or above in format: .PARAMETER  \&lt;Parameter-Name></p>
+<h3 id="-deviceip">-DeviceIP</h3>
+<p>The device's IP address, not needed if a Pixoo64 device is already in your ARP cache</p>
 <pre><code class="language-yaml">Type: String
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: 1
-Default value: GetHelloWorld
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+</code></pre>
+<h3 id="-urlgif">-UrlGif</h3>
+<p>An http url that points to a gif</p>
+<pre><code class="language-yaml">Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 2
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
@@ -175,8 +186,8 @@ Accept wildcard characters: False
 <p>This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see <a href="http://go.microsoft.com/fwlink/?LinkID=113216">about_CommonParameters</a>.</p>
 <h2 id="inputs">INPUTS</h2>
 <h2 id="outputs">OUTPUTS</h2>
-<h3 id="systemstring">System.String</h3>
 <h2 id="notes">NOTES</h2>
+<p>General notes</p>
 <h2 id="related-links">RELATED LINKS</h2>
               
             </div>
@@ -185,10 +196,10 @@ Accept wildcard characters: False
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Invoke-PlayGif/" class="btn btn-neutral float-right" title="Invoke-PlayGif">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="Set-Channel.html" class="btn btn-neutral float-right" title="Set-Channel">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../Get-FaceType/" class="btn btn-neutral" title="Get-FaceType"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="Get-FaceType.html" class="btn btn-neutral" title="Get-FaceType"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -214,21 +225,21 @@ Accept wildcard characters: False
   <span class="rst-current-version" data-toggle="rst-current-version">
     
         <span>
-          <a href="https://github.com/quonic/PixooPS.git/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+          <a href="https://github.com/quonic/PixooPS/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
         </span>
     
     
-      <span><a href="../Get-FaceType/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="Get-FaceType.html" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../Invoke-PlayGif/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="Set-Channel.html" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme_extra.js" defer></script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../search/main.js" defer></script>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
     <script defer>
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);

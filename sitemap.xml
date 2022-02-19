@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>None</loc>
-         <lastmod>2022-02-18</lastmod>
+         <loc>https://quonic.github.io/PixooPS/index.html</loc>
+         <lastmod>2022-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-02-18</lastmod>
+         <loc>https://quonic.github.io/PixooPS/en-US/Find-Pixoo.html</loc>
+         <lastmod>2022-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-02-18</lastmod>
+         <loc>https://quonic.github.io/PixooPS/en-US/Get-Channel.html</loc>
+         <lastmod>2022-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-02-18</lastmod>
+         <loc>https://quonic.github.io/PixooPS/en-US/Get-Face.html</loc>
+         <lastmod>2022-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-02-18</lastmod>
+         <loc>https://quonic.github.io/PixooPS/en-US/Get-FaceList.html</loc>
+         <lastmod>2022-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-02-18</lastmod>
+         <loc>https://quonic.github.io/PixooPS/en-US/Get-FaceType.html</loc>
+         <lastmod>2022-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-02-18</lastmod>
+         <loc>https://quonic.github.io/PixooPS/en-US/Invoke-PlayGif.html</loc>
+         <lastmod>2022-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-02-18</lastmod>
+         <loc>https://quonic.github.io/PixooPS/en-US/Set-Channel.html</loc>
+         <lastmod>2022-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-02-18</lastmod>
+         <loc>https://quonic.github.io/PixooPS/en-US/Set-Face.html</loc>
+         <lastmod>2022-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-02-18</lastmod>
+         <loc>https://quonic.github.io/PixooPS/en-US/Set-Screen.html</loc>
+         <lastmod>2022-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-02-18</lastmod>
+         <loc>https://quonic.github.io/PixooPS/en-US/about_PixooPS.help.html</loc>
+         <lastmod>2022-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
