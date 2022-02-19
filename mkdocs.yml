@@ -1,9 +1,11 @@
 site_name: PixooPS
 site_url: https://quonic.github.io/PixooPS/
-repo_url: https://github.com/quonic/PixooPS.git
-theme: readthedocs
+repo_url: https://github.com/quonic/PixooPS/
+theme:
+  name: readthedocs
 remote_name: origin
 remote_branch: pages
 site_description: "A PowerShell module to control Pixoo64 devices"
 site_author: "Quonic/Spyingwind"
-
+use_directory_urls: true
+docs_dir: docs/en-US/
