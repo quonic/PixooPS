@@ -35,4 +35,4 @@ Set-Face -FaceId $Face.ClockId -DeviceIP $IP
 
 [![pages-build-deployment](https://github.com/quonic/PixooPS/actions/workflows/pages/pages-build-deployment/badge.svg?branch=pages)](https://github.com/quonic/PixooPS/actions/workflows/pages/pages-build-deployment)
 
-[GitHub Pages]<https://quonic.github.io/PixooPS/>
+[GitHub Pages](https://quonic.github.io/PixooPS/)
