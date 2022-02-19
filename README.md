@@ -11,13 +11,13 @@ You can change the current face, turn on and off the screen, display an animated
 - Any OS that PowerShell can be installed on.
 - PowerShell 5.1 and PowerShell 7 are supported, though PowerShell 7 or greater is reccomended.
 
-<!-- ## Installation
+## Installation
 
 Install the module under your user's scope.
 
 ```powershell
 Install-Module PixooPS -Scope CurrentUser
-``` -->
+```
 
 ## Examples
 
