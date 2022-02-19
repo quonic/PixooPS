@@ -1,5 +1,7 @@
 # PixooPS
 
+[![CI](https://github.com/quonic/PixooPS/actions/workflows/CI.yaml/badge.svg?branch=main)](https://github.com/quonic/PixooPS/actions/workflows/CI.yaml)
+
 PixooPS is a module to control Divoom Pixoo64 devices.
 
 ## Overview
@@ -28,3 +30,9 @@ Set-Channel -Channel Faces -DeviceIP $IP
 Start-Sleep -Seconds 1
 Set-Face -FaceId $Face.ClockId -DeviceIP $IP
 ```
+
+## Documentation
+
+[![pages-build-deployment](https://github.com/quonic/PixooPS/actions/workflows/pages/pages-build-deployment/badge.svg?branch=pages)](https://github.com/quonic/PixooPS/actions/workflows/pages/pages-build-deployment)
+
+[GitHub Pages]<https://quonic.github.io/PixooPS/>
