@@ -13,7 +13,7 @@ Sets the custom page of a Pixoo64 device
 
 ## SYNTAX
 
-```powershell
+```
 Set-CustomPage [-Page] <Int32> [[-DeviceIP] <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 

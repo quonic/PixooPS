@@ -13,7 +13,7 @@ Sets the Channel of a Pixoo64 device
 
 ## SYNTAX
 
-```powershell
+```
 Set-Channel [[-DeviceIP] <String>] [-Channel] <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -102,7 +102,6 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

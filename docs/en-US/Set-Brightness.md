@@ -13,7 +13,7 @@ Sets the Brightness of a Pixoo64 device
 
 ## SYNTAX
 
-```powershell
+```
 Set-Brightness [-Brightness] <Int32> [[-DeviceIP] <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 

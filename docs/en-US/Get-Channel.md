@@ -13,7 +13,7 @@ Returns what channel a Pixoo64 device is currently on
 
 ## SYNTAX
 
-```powershell
+```
 Get-Channel [[-DeviceIP] <Object>] [<CommonParameters>]
 ```
 
@@ -48,7 +48,6 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

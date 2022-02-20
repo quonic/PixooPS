@@ -13,7 +13,7 @@ Gets the current face of a Pixoo64 device
 
 ## SYNTAX
 
-```powershell
+```
 Get-Face [[-DeviceIP] <Object>] [<CommonParameters>]
 ```
 
@@ -48,7 +48,6 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

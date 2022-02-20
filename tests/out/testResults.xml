@@ -1,661 +1,375 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="99" errors="0" failures="85" not-run="0" inconclusive="0" ignored="0" skipped="2" invalid="0" date="2022-02-18" time="15:32:53">
-  <environment user="spyin" clr-version="Unknown" platform="Microsoft Windows 10 Pro|C:\WINDOWS|\Device\Harddisk1\Partition4" os-version="10.0.19043" cwd="D:\Code\PixooPS\tests" nunit-version="2.5.8.0" machine-name="DESKTOP-HJLCV2Q" user-domain="DESKTOP-HJLCV2Q" />
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="162" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="18" invalid="0" date="2022-02-19" time="18:39:19">
+  <environment nunit-version="2.5.8.0" user="spyin" machine-name="DESKTOP-HJLCV2Q" clr-version="Unknown" cwd="D:\Code\PixooPS\tests" platform="Microsoft Windows 10 Pro|C:\WINDOWS|\Device\Harddisk1\Partition4" os-version="10.0.19043" user-domain="DESKTOP-HJLCV2Q" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="TestFixture" name="Pester" executed="True" result="Failure" success="False" time="0.5707" asserts="0" description="Pester">
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Ignored" success="True" time="0.9958" asserts="0" description="Pester">
     <results>
-      <test-suite type="TestFixture" name="D:\Code\PixooPS\tests\Help.tests.ps1" executed="True" result="Failure" success="False" time="0.3444" asserts="0" description="D:\Code\PixooPS\tests\Help.tests.ps1">
+      <test-suite type="TestFixture" name="D:\Code\PixooPS\tests\Help.tests.ps1" executed="True" result="Ignored" success="True" time="0.6819" asserts="0" description="D:\Code\PixooPS\tests\Help.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0.0208" asserts="0" description="Test help for &lt;_.Name&gt;">
+          <test-suite type="TestFixture" name="Test help for Find-Pixoo" executed="True" result="Ignored" success="True" time="0.0251" asserts="0" description="Test help for Find-Pixoo">
             <results>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Find-Pixoo.Parameter IPAddress" executed="True" result="Success" success="True" time="0.0172" asserts="0" description="Test help for Find-Pixoo.Parameter IPAddress">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Find-Pixoo.Parameter IPAddress.Has description" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Find-Pixoo.Parameter IPAddress.Has correct [mandatory] value" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Find-Pixoo.Parameter IPAddress.Has correct parameter type" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for &lt;_.Name&gt;.Help is not auto-generated" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example code" name="Test help for &lt;_.Name&gt;.Has example code" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
+              <test-case description="Help is not auto-generated" name="Test help for Find-Pixoo.Help is not auto-generated" time="0.003" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Find-Pixoo.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Find-Pixoo.Has example code" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.001" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0.0403" asserts="0" description="Test help for &lt;_.Name&gt;">
+          <test-suite type="TestFixture" name="Test help for Get-Channel" executed="True" result="Ignored" success="True" time="0.0502" asserts="0" description="Test help for Get-Channel">
             <results>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Get-Channel.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.0176" asserts="0" description="Test help for Get-Channel.Parameter DeviceIP">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Get-Channel.Parameter DeviceIP.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Channel.Parameter DeviceIP.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-Channel.Parameter DeviceIP.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for &lt;_.Name&gt;.Help is not auto-generated" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example code" name="Test help for &lt;_.Name&gt;.Has example code" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
+              <test-case description="Help is not auto-generated" name="Test help for Get-Channel.Help is not auto-generated" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-Channel.Has description" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-Channel.Has example code" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.0011" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0.0603" asserts="0" description="Test help for &lt;_.Name&gt;">
+          <test-suite type="TestFixture" name="Test help for Get-Face" executed="True" result="Ignored" success="True" time="0.0714" asserts="0" description="Test help for Get-Face">
             <results>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Get-Face.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.0139" asserts="0" description="Test help for Get-Face.Parameter DeviceIP">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Get-Face.Parameter DeviceIP.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-Face.Parameter DeviceIP.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-Face.Parameter DeviceIP.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for &lt;_.Name&gt;.Help is not auto-generated" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example code" name="Test help for &lt;_.Name&gt;.Has example code" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
+              <test-case description="Help is not auto-generated" name="Test help for Get-Face.Help is not auto-generated" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-Face.Has description" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-Face.Has example code" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.001" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0.0808" asserts="0" description="Test help for &lt;_.Name&gt;">
+          <test-suite type="TestFixture" name="Test help for Get-FaceList" executed="True" result="Ignored" success="True" time="0.1041" asserts="0" description="Test help for Get-FaceList">
             <results>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Get-FaceList.Parameter Page" executed="True" result="Success" success="True" time="0.0138" asserts="0" description="Test help for Get-FaceList.Parameter Page">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Get-FaceList.Parameter Page.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-FaceList.Parameter Page.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-FaceList.Parameter Page.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Get-FaceList.Parameter Type" executed="True" result="Success" success="True" time="0.0251" asserts="0" description="Test help for Get-FaceList.Parameter Type">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Get-FaceList.Parameter Type.Has description" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-FaceList.Parameter Type.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-FaceList.Parameter Type.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for &lt;_.Name&gt;.Help is not auto-generated" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example code" name="Test help for &lt;_.Name&gt;.Has example code" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
+              <test-case description="Help is not auto-generated" name="Test help for Get-FaceList.Help is not auto-generated" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-FaceList.Has description" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-FaceList.Has example code" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.0011" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0.1018" asserts="0" description="Test help for &lt;_.Name&gt;">
+          <test-suite type="TestFixture" name="Test help for Get-FaceType" executed="True" result="Ignored" success="True" time="0.126" asserts="0" description="Test help for Get-FaceType">
             <results>
-              <test-case description="Help is not auto-generated" name="Test help for &lt;_.Name&gt;.Help is not auto-generated" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example code" name="Test help for &lt;_.Name&gt;.Has example code" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
+              <test-case description="Help is not auto-generated" name="Test help for Get-FaceType.Help is not auto-generated" time="0.0051" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-FaceType.Has description" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-FaceType.Has example code" time="0.0041" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.0012" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0.1214" asserts="0" description="Test help for &lt;_.Name&gt;">
+          <test-suite type="TestFixture" name="Test help for Get-PixooSetting" executed="True" result="Ignored" success="True" time="0.1641" asserts="0" description="Test help for Get-PixooSetting">
             <results>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Get-PixooSetting.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.03" asserts="0" description="Test help for Get-PixooSetting.Parameter DeviceIP">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Get-PixooSetting.Parameter DeviceIP.Has description" time="0.0047" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Get-PixooSetting.Parameter DeviceIP.Has correct [mandatory] value" time="0.004" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Get-PixooSetting.Parameter DeviceIP.Has correct parameter type" time="0.0043" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for &lt;_.Name&gt;.Help is not auto-generated" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example code" name="Test help for &lt;_.Name&gt;.Has example code" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
+              <test-case description="Help is not auto-generated" name="Test help for Get-PixooSetting.Help is not auto-generated" time="0.0054" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Get-PixooSetting.Has description" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Get-PixooSetting.Has example code" time="0.0041" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.0011" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0.1443" asserts="0" description="Test help for &lt;_.Name&gt;">
+          <test-suite type="TestFixture" name="Test help for Invoke-PlayGif" executed="True" result="Ignored" success="True" time="0.1984" asserts="0" description="Test help for Invoke-PlayGif">
             <results>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Invoke-PlayGif.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.0148" asserts="0" description="Test help for Invoke-PlayGif.Parameter DeviceIP">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Invoke-PlayGif.Parameter DeviceIP.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Invoke-PlayGif.Parameter DeviceIP.Has correct [mandatory] value" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Invoke-PlayGif.Parameter DeviceIP.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Invoke-PlayGif.Parameter UrlGif" executed="True" result="Success" success="True" time="0.0243" asserts="0" description="Test help for Invoke-PlayGif.Parameter UrlGif">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Invoke-PlayGif.Parameter UrlGif.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Invoke-PlayGif.Parameter UrlGif.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Invoke-PlayGif.Parameter UrlGif.Has correct parameter type" time="0.0041" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for &lt;_.Name&gt;.Help is not auto-generated" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example code" name="Test help for &lt;_.Name&gt;.Has example code" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
+              <test-case description="Help is not auto-generated" name="Test help for Invoke-PlayGif.Help is not auto-generated" time="0.0027" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Invoke-PlayGif.Has description" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Invoke-PlayGif.Has example code" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.001" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0.165" asserts="0" description="Test help for &lt;_.Name&gt;">
+          <test-suite type="TestFixture" name="Test help for Set-Brightness" executed="True" result="Ignored" success="True" time="0.2272" asserts="0" description="Test help for Set-Brightness">
             <results>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Set-Brightness.Parameter Brightness" executed="True" result="Success" success="True" time="0.0142" asserts="0" description="Test help for Set-Brightness.Parameter Brightness">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Set-Brightness.Parameter Brightness.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-Brightness.Parameter Brightness.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-Brightness.Parameter Brightness.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Set-Brightness.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.0213" asserts="0" description="Test help for Set-Brightness.Parameter DeviceIP">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Set-Brightness.Parameter DeviceIP.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-Brightness.Parameter DeviceIP.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-Brightness.Parameter DeviceIP.Has correct parameter type" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for &lt;_.Name&gt;.Help is not auto-generated" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example code" name="Test help for &lt;_.Name&gt;.Has example code" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
+              <test-case description="Help is not auto-generated" name="Test help for Set-Brightness.Help is not auto-generated" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Set-Brightness.Has description" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Set-Brightness.Has example code" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.001" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0.185" asserts="0" description="Test help for &lt;_.Name&gt;">
+          <test-suite type="TestFixture" name="Test help for Set-Channel" executed="True" result="Ignored" success="True" time="0.2596" asserts="0" description="Test help for Set-Channel">
             <results>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Set-Channel.Parameter Channel" executed="True" result="Success" success="True" time="0.0137" asserts="0" description="Test help for Set-Channel.Parameter Channel">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Set-Channel.Parameter Channel.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-Channel.Parameter Channel.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-Channel.Parameter Channel.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Set-Channel.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.0247" asserts="0" description="Test help for Set-Channel.Parameter DeviceIP">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Set-Channel.Parameter DeviceIP.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-Channel.Parameter DeviceIP.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-Channel.Parameter DeviceIP.Has correct parameter type" time="0.0056" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for &lt;_.Name&gt;.Help is not auto-generated" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example code" name="Test help for &lt;_.Name&gt;.Has example code" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
+              <test-case description="Help is not auto-generated" name="Test help for Set-Channel.Help is not auto-generated" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Set-Channel.Has description" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Set-Channel.Has example code" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.0011" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0.205" asserts="0" description="Test help for &lt;_.Name&gt;">
+          <test-suite type="TestFixture" name="Test help for Set-CloudChannel" executed="True" result="Ignored" success="True" time="0.2882" asserts="0" description="Test help for Set-CloudChannel">
             <results>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Set-CloudChannel.Parameter Channel" executed="True" result="Success" success="True" time="0.014" asserts="0" description="Test help for Set-CloudChannel.Parameter Channel">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Set-CloudChannel.Parameter Channel.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-CloudChannel.Parameter Channel.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-CloudChannel.Parameter Channel.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-suite type="TestFixture" name="Test help for Set-CloudChannel.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.0211" asserts="0" description="Test help for Set-CloudChannel.Parameter DeviceIP">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Set-CloudChannel.Parameter DeviceIP.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-CloudChannel.Parameter DeviceIP.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-CloudChannel.Parameter DeviceIP.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;" executed="True" result="Failure" success="False" time="0" asserts="0" description="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;">
+              <test-case description="Help is not auto-generated" name="Test help for Set-CloudChannel.Help is not auto-generated" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Set-CloudChannel.Has description" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Set-CloudChannel.Has example code" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.0011" asserts="0" success="False" result="Ignored" executed="False" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test help for Set-CustomPage" executed="True" result="Ignored" success="True" time="0.3199" asserts="0" description="Test help for Set-CustomPage">
+            <results>
+              <test-suite type="TestFixture" name="Test help for Set-CustomPage.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.0142" asserts="0" description="Test help for Set-CustomPage.Parameter DeviceIP">
                 <results>
-                  <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct [mandatory] value" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct [mandatory] value" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
-                  <test-case description="Has correct parameter type" name="Test help for &lt;_.Name&gt;.Parameter &lt;_.Name&gt;.Has correct parameter type" time="0" asserts="0" success="False" result="Failure" executed="True">
-                    <failure>
-                      <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                      <stack-trace />
-                    </failure>
-                  </test-case>
+                  <test-case description="Has description" name="Test help for Set-CustomPage.Parameter DeviceIP.Has description" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-CustomPage.Parameter DeviceIP.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-CustomPage.Parameter DeviceIP.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-case description="Help is not auto-generated" name="Test help for &lt;_.Name&gt;.Help is not auto-generated" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has description" name="Test help for &lt;_.Name&gt;.Has description" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example code" name="Test help for &lt;_.Name&gt;.Has example code" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
-              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0" asserts="0" success="False" result="Failure" executed="True">
-                <failure>
-                  <message>This test should run but it did not. Most likely a setup in some parent block failed.</message>
-                  <stack-trace />
-                </failure>
-              </test-case>
+              <test-suite type="TestFixture" name="Test help for Set-CustomPage.Parameter Page" executed="True" result="Success" success="True" time="0.0239" asserts="0" description="Test help for Set-CustomPage.Parameter Page">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-CustomPage.Parameter Page.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-CustomPage.Parameter Page.Has correct [mandatory] value" time="0.0041" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-CustomPage.Parameter Page.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-case description="Help is not auto-generated" name="Test help for Set-CustomPage.Help is not auto-generated" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Set-CustomPage.Has description" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Set-CustomPage.Has example code" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.001" asserts="0" success="False" result="Ignored" executed="False" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test help for Set-Face" executed="True" result="Ignored" success="True" time="0.3495" asserts="0" description="Test help for Set-Face">
+            <results>
+              <test-suite type="TestFixture" name="Test help for Set-Face.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.0142" asserts="0" description="Test help for Set-Face.Parameter DeviceIP">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-Face.Parameter DeviceIP.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-Face.Parameter DeviceIP.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-Face.Parameter DeviceIP.Has correct parameter type" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Test help for Set-Face.Parameter FaceId" executed="True" result="Success" success="True" time="0.0216" asserts="0" description="Test help for Set-Face.Parameter FaceId">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-Face.Parameter FaceId.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-Face.Parameter FaceId.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-Face.Parameter FaceId.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-case description="Help is not auto-generated" name="Test help for Set-Face.Help is not auto-generated" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Set-Face.Has description" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Set-Face.Has example code" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.001" asserts="0" success="False" result="Ignored" executed="False" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test help for Set-PixooLocation" executed="True" result="Ignored" success="True" time="0.389" asserts="0" description="Test help for Set-PixooLocation">
+            <results>
+              <test-suite type="TestFixture" name="Test help for Set-PixooLocation.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.0144" asserts="0" description="Test help for Set-PixooLocation.Parameter DeviceIP">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-PixooLocation.Parameter DeviceIP.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-PixooLocation.Parameter DeviceIP.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-PixooLocation.Parameter DeviceIP.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Test help for Set-PixooLocation.Parameter Latitude" executed="True" result="Success" success="True" time="0.0241" asserts="0" description="Test help for Set-PixooLocation.Parameter Latitude">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-PixooLocation.Parameter Latitude.Has description" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-PixooLocation.Parameter Latitude.Has correct [mandatory] value" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-PixooLocation.Parameter Latitude.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Test help for Set-PixooLocation.Parameter Longitude" executed="True" result="Success" success="True" time="0.0317" asserts="0" description="Test help for Set-PixooLocation.Parameter Longitude">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-PixooLocation.Parameter Longitude.Has description" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-PixooLocation.Parameter Longitude.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-PixooLocation.Parameter Longitude.Has correct parameter type" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-case description="Help is not auto-generated" name="Test help for Set-PixooLocation.Help is not auto-generated" time="0.0025" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Set-PixooLocation.Has description" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Set-PixooLocation.Has example code" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.001" asserts="0" success="False" result="Ignored" executed="False" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test help for Set-PixooTimeZone" executed="True" result="Ignored" success="True" time="0.4177" asserts="0" description="Test help for Set-PixooTimeZone">
+            <results>
+              <test-suite type="TestFixture" name="Test help for Set-PixooTimeZone.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.0139" asserts="0" description="Test help for Set-PixooTimeZone.Parameter DeviceIP">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-PixooTimeZone.Parameter DeviceIP.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-PixooTimeZone.Parameter DeviceIP.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-PixooTimeZone.Parameter DeviceIP.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Test help for Set-PixooTimeZone.Parameter TimeZone" executed="True" result="Success" success="True" time="0.021" asserts="0" description="Test help for Set-PixooTimeZone.Parameter TimeZone">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-PixooTimeZone.Parameter TimeZone.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-PixooTimeZone.Parameter TimeZone.Has correct [mandatory] value" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-PixooTimeZone.Parameter TimeZone.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-case description="Help is not auto-generated" name="Test help for Set-PixooTimeZone.Help is not auto-generated" time="0.0023" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Set-PixooTimeZone.Has description" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Set-PixooTimeZone.Has example code" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.0011" asserts="0" success="False" result="Ignored" executed="False" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test help for Set-Screen" executed="True" result="Ignored" success="True" time="0.4569" asserts="0" description="Test help for Set-Screen">
+            <results>
+              <test-suite type="TestFixture" name="Test help for Set-Screen.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.0169" asserts="0" description="Test help for Set-Screen.Parameter DeviceIP">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-Screen.Parameter DeviceIP.Has description" time="0.0046" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-Screen.Parameter DeviceIP.Has correct [mandatory] value" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-Screen.Parameter DeviceIP.Has correct parameter type" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Test help for Set-Screen.Parameter Off" executed="True" result="Success" success="True" time="0.024" asserts="0" description="Test help for Set-Screen.Parameter Off">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-Screen.Parameter Off.Has description" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-Screen.Parameter Off.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-Screen.Parameter Off.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Test help for Set-Screen.Parameter On" executed="True" result="Success" success="True" time="0.0314" asserts="0" description="Test help for Set-Screen.Parameter On">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-Screen.Parameter On.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-Screen.Parameter On.Has correct [mandatory] value" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-Screen.Parameter On.Has correct parameter type" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-case description="Help is not auto-generated" name="Test help for Set-Screen.Help is not auto-generated" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Set-Screen.Has description" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Set-Screen.Has example code" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.001" asserts="0" success="False" result="Ignored" executed="False" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="Test help for Set-Visualizer" executed="True" result="Ignored" success="True" time="0.4863" asserts="0" description="Test help for Set-Visualizer">
+            <results>
+              <test-suite type="TestFixture" name="Test help for Set-Visualizer.Parameter DeviceIP" executed="True" result="Success" success="True" time="0.0143" asserts="0" description="Test help for Set-Visualizer.Parameter DeviceIP">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-Visualizer.Parameter DeviceIP.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-Visualizer.Parameter DeviceIP.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-Visualizer.Parameter DeviceIP.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Test help for Set-Visualizer.Parameter EqPosition" executed="True" result="Success" success="True" time="0.0216" asserts="0" description="Test help for Set-Visualizer.Parameter EqPosition">
+                <results>
+                  <test-case description="Has description" name="Test help for Set-Visualizer.Parameter EqPosition.Has description" time="0.002" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct [mandatory] value" name="Test help for Set-Visualizer.Parameter EqPosition.Has correct [mandatory] value" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has correct parameter type" name="Test help for Set-Visualizer.Parameter EqPosition.Has correct parameter type" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-case description="Help is not auto-generated" name="Test help for Set-Visualizer.Help is not auto-generated" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has description" name="Test help for Set-Visualizer.Has description" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example code" name="Test help for Set-Visualizer.Has example code" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+              <test-case description="Has example help" name="Test help for &lt;_.Name&gt;.Has example help" time="0.0011" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="D:\Code\PixooPS\tests\Manifest.tests.ps1" executed="True" result="Ignored" success="True" time="0.1439" asserts="0" description="D:\Code\PixooPS\tests\Manifest.tests.ps1">
+      <test-suite type="TestFixture" name="D:\Code\PixooPS\tests\Manifest.tests.ps1" executed="True" result="Ignored" success="True" time="0.1606" asserts="0" description="D:\Code\PixooPS\tests\Manifest.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="Module manifest" executed="True" result="Success" success="True" time="0.0269" asserts="0" description="Module manifest">
+          <test-suite type="TestFixture" name="Module manifest" executed="True" result="Success" success="True" time="0.0233" asserts="0" description="Module manifest">
             <results>
-              <test-suite type="TestFixture" name="Module manifest.Validation" executed="True" result="Success" success="True" time="0.0245" asserts="0" description="Module manifest.Validation">
+              <test-suite type="TestFixture" name="Module manifest.Validation" executed="True" result="Success" success="True" time="0.0216" asserts="0" description="Module manifest.Validation">
                 <results>
-                  <test-case description="Has a valid manifest" name="Module manifest.Validation.Has a valid manifest" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid name in the manifest" name="Module manifest.Validation.Has a valid name in the manifest" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid root module" name="Module manifest.Validation.Has a valid root module" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid manifest" name="Module manifest.Validation.Has a valid manifest" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid name in the manifest" name="Module manifest.Validation.Has a valid name in the manifest" time="0.0019" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid root module" name="Module manifest.Validation.Has a valid root module" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
                   <test-case description="Has a valid version in the manifest" name="Module manifest.Validation.Has a valid version in the manifest" time="0.0016" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid description" name="Module manifest.Validation.Has a valid description" time="0.0022" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Has a valid author" name="Module manifest.Validation.Has a valid author" time="0.0045" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid description" name="Module manifest.Validation.Has a valid description" time="0.0024" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Has a valid author" name="Module manifest.Validation.Has a valid author" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
                   <test-case description="Has a valid guid" name="Module manifest.Validation.Has a valid guid" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
                   <test-case description="Has a valid copyright" name="Module manifest.Validation.Has a valid copyright" time="0.0015" asserts="0" success="True" result="Success" executed="True" />
                   <test-case description="Has a valid version in the changelog" name="Module manifest.Validation.Has a valid version in the changelog" time="0.0018" asserts="0" success="True" result="Success" executed="True" />
-                  <test-case description="Changelog and manifest versions are the same" name="Module manifest.Validation.Changelog and manifest versions are the same" time="0.0017" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Changelog and manifest versions are the same" name="Module manifest.Validation.Changelog and manifest versions are the same" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
             </results>
           </test-suite>
-          <test-suite type="TestFixture" name="Git tagging" executed="True" result="Ignored" success="True" time="0.0314" asserts="0" description="Git tagging">
+          <test-suite type="TestFixture" name="Git tagging" executed="True" result="Ignored" success="True" time="0.0278" asserts="0" description="Git tagging">
             <results>
-              <test-case description="Is tagged with a valid version" name="Git tagging.Is tagged with a valid version" time="0.0019" asserts="0" success="False" result="Ignored" executed="False" />
-              <test-case description="Matches manifest version" name="Git tagging.Matches manifest version" time="0.001" asserts="0" success="False" result="Ignored" executed="False" />
+              <test-case description="Is tagged with a valid version" name="Git tagging.Is tagged with a valid version" time="0.0018" asserts="0" success="False" result="Ignored" executed="False" />
+              <test-case description="Matches manifest version" name="Git tagging.Matches manifest version" time="0.0011" asserts="0" success="False" result="Ignored" executed="False" />
             </results>
           </test-suite>
         </results>
       </test-suite>
-      <test-suite type="TestFixture" name="D:\Code\PixooPS\tests\Meta.tests.ps1" executed="True" result="Success" success="True" time="0.0824" asserts="0" description="D:\Code\PixooPS\tests\Meta.tests.ps1">
+      <test-suite type="TestFixture" name="D:\Code\PixooPS\tests\Meta.tests.ps1" executed="True" result="Success" success="True" time="0.1533" asserts="0" description="D:\Code\PixooPS\tests\Meta.tests.ps1">
         <results>
-          <test-suite type="TestFixture" name="Text files formatting" executed="True" result="Success" success="True" time="0.0093" asserts="0" description="Text files formatting">
+          <test-suite type="TestFixture" name="Text files formatting" executed="True" result="Success" success="True" time="0.0108" asserts="0" description="Text files formatting">
             <results>
-              <test-suite type="TestFixture" name="Text files formatting.File encoding" executed="True" result="Success" success="True" time="0.0042" asserts="0" description="Text files formatting.File encoding">
+              <test-suite type="TestFixture" name="Text files formatting.File encoding" executed="True" result="Success" success="True" time="0.0043" asserts="0" description="Text files formatting.File encoding">
                 <results>
-                  <test-case description="No text file uses Unicode/UTF-16 encoding" name="Text files formatting.File encoding.No text file uses Unicode/UTF-16 encoding" time="0.0027" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="No text file uses Unicode/UTF-16 encoding" name="Text files formatting.File encoding.No text file uses Unicode/UTF-16 encoding" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="Text files formatting.Indentations" executed="True" result="Success" success="True" time="0.0078" asserts="0" description="Text files formatting.Indentations">
+              <test-suite type="TestFixture" name="Text files formatting.Indentations" executed="True" result="Success" success="True" time="0.0081" asserts="0" description="Text files formatting.Indentations">
                 <results>
                   <test-case description="No text file use tabs for indentations" name="Text files formatting.Indentations.No text file use tabs for indentations" time="0.0021" asserts="0" success="True" result="Success" executed="True" />
                 </results>

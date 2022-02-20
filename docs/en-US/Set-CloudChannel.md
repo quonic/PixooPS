@@ -13,7 +13,7 @@ Sets the Cloud Channel of a Pixoo64 device
 
 ## SYNTAX
 
-```powershell
+```
 Set-CloudChannel [-Channel] <Int32> [[-DeviceIP] <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 

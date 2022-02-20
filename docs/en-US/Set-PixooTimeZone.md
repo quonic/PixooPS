@@ -13,7 +13,7 @@ Sets the TimeZone of a Pixoo64 device
 
 ## SYNTAX
 
-```powershell
+```
 Set-PixooTimeZone [-TimeZone] <String> [[-DeviceIP] <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 

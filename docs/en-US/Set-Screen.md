@@ -14,14 +14,12 @@ Turns off and on the screen of a Pixoo64 device
 ## SYNTAX
 
 ### On
-
-```powershell
+```
 Set-Screen [-DeviceIP <String>] [-On] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Off
-
-```powershell
+```
 Set-Screen [-DeviceIP <String>] [-Off] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -126,7 +124,6 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
