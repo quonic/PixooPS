@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <meta name="author" content="Quonic/Spyingwind">
-  <link rel="canonical" href="https://quonic.github.io/PixooPS/en-US/Set-Screen.html">
+  <link rel="canonical" href="https://quonic.github.io/PixooPS/en-US/Set-Visualizer.html">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Set-Screen - PixooPS</title>
+  <title>Set-Visualizer - PixooPS</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Set-Screen";
-    var mkdocs_page_input_path = "en-US\\Set-Screen.md";
-    var mkdocs_page_url = "/PixooPS/en-US/Set-Screen.html";
+    var mkdocs_page_name = "Set-Visualizer";
+    var mkdocs_page_input_path = "en-US\\Set-Visualizer.md";
+    var mkdocs_page_url = "/PixooPS/en-US/Set-Visualizer.html";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js" defer></script>
@@ -80,17 +80,13 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="Set-PixooTimeZone.html">Set-PixooTimeZone</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="Set-Screen.html">Set-Screen</a>
+                    <li class="toctree-l1"><a class="reference internal" href="Set-Screen.html">Set-Screen</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="Set-Visualizer.html">Set-Visualizer</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#synopsis">SYNOPSIS</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#syntax">SYNTAX</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#on">On</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#off">Off</a>
-    </li>
-        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#description">DESCRIPTION</a>
     </li>
@@ -98,17 +94,13 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#example-1">EXAMPLE 1</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#example-2">EXAMPLE 2</a>
-    </li>
         </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#parameters">PARAMETERS</a>
         <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#-eqposition">-EqPosition</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#-deviceip">-DeviceIP</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#-on">-On</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#-off">-Off</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#-whatif">-WhatIf</a>
     </li>
@@ -121,14 +113,16 @@
     <li class="toctree-l2"><a class="reference internal" href="#inputs">INPUTS</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#outputs">OUTPUTS</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#systemboolean">System.Boolean</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#notes">NOTES</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#related-links">RELATED LINKS</a>
     </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="Set-Visualizer.html">Set-Visualizer</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="about_PixooPS.help.html">About_PixooPS</a>
                     </li>
@@ -158,10 +152,10 @@
         
       
     
-    <li>Set-Screen</li>
+    <li>Set-Visualizer</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/quonic/PixooPS/edit/master/docs/en-US/Set-Screen.md"
+        <a href="https://github.com/quonic/PixooPS/edit/master/docs/en-US/Set-Visualizer.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -173,26 +167,31 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="set-screen">Set-Screen</h1>
+                <h1 id="set-visualizer">Set-Visualizer</h1>
 <h2 id="synopsis">SYNOPSIS</h2>
-<p>Turns off and on the screen of a Pixoo64 device</p>
+<p>Sets the Visualizer of a Pixoo64 device</p>
 <h2 id="syntax">SYNTAX</h2>
-<h3 id="on">On</h3>
-<pre><code>Set-Screen [-DeviceIP &lt;String&gt;] [-On] [-WhatIf] [-Confirm] [&lt;CommonParameters&gt;]
-</code></pre>
-<h3 id="off">Off</h3>
-<pre><code>Set-Screen [-DeviceIP &lt;String&gt;] [-Off] [-WhatIf] [-Confirm] [&lt;CommonParameters&gt;]
+<pre><code>Set-Visualizer [-EqPosition] &lt;Int32&gt; [[-DeviceIP] &lt;String&gt;] [-WhatIf] [-Confirm] [&lt;CommonParameters&gt;]
 </code></pre>
 <h2 id="description">DESCRIPTION</h2>
-<p>Turns off and on the screen of a Pixoo64 device</p>
+<p>Sets the Visualizer of a Pixoo64 device, similar to Set-Face.</p>
 <h2 id="examples">EXAMPLES</h2>
 <h3 id="example-1">EXAMPLE 1</h3>
-<pre><code class="language-powershell">Set-Screen -On
-</code></pre>
-<h3 id="example-2">EXAMPLE 2</h3>
-<pre><code class="language-powershell">Set-Screen -Off
+<pre><code class="language-powershell">Set-Visualizer -EqPosition 0
 </code></pre>
 <h2 id="parameters">PARAMETERS</h2>
+<h3 id="-eqposition">-EqPosition</h3>
+<p>The Eq Position that you wish a Pixoo64 device to be set to, 0 or greater</p>
+<pre><code class="language-yaml">Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+</code></pre>
 <h3 id="-deviceip">-DeviceIP</h3>
 <p>The device's IP address, not needed if a Pixoo64 device is already in your ARP cache</p>
 <pre><code class="language-yaml">Type: String
@@ -200,37 +199,14 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: Named
+Position: 2
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
-<h3 id="-on">-On</h3>
-<p>Used to turn on the screen</p>
-<pre><code class="language-yaml">Type: SwitchParameter
-Parameter Sets: On
-Aliases:
-
-Required: True
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-</code></pre>
-<h3 id="-off">-Off</h3>
-<p>Used to turn off the screen</p>
-<pre><code class="language-yaml">Type: SwitchParameter
-Parameter Sets: Off
-Aliases:
-
-Required: True
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-</code></pre>
 <h3 id="-whatif">-WhatIf</h3>
-<p>Shows what would happen if the cmdlet runs. The cmdlet is not run.</p>
+<p>Shows what would happen if the cmdlet runs.
+The cmdlet is not run.</p>
 <pre><code class="language-yaml">Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
@@ -257,6 +233,7 @@ Accept wildcard characters: False
 <p>This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see <a href="http://go.microsoft.com/fwlink/?LinkID=113216">about_CommonParameters</a>.</p>
 <h2 id="inputs">INPUTS</h2>
 <h2 id="outputs">OUTPUTS</h2>
+<h3 id="systemboolean">System.Boolean</h3>
 <h2 id="notes">NOTES</h2>
 <p>General notes</p>
 <h2 id="related-links">RELATED LINKS</h2>
@@ -267,10 +244,10 @@ Accept wildcard characters: False
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Set-Visualizer.html" class="btn btn-neutral float-right" title="Set-Visualizer">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="about_PixooPS.help.html" class="btn btn-neutral float-right" title="About_PixooPS">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="Set-PixooTimeZone.html" class="btn btn-neutral" title="Set-PixooTimeZone"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="Set-Screen.html" class="btn btn-neutral" title="Set-Screen"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -300,10 +277,10 @@ Accept wildcard characters: False
         </span>
     
     
-      <span><a href="Set-PixooTimeZone.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="Set-Screen.html" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="Set-Visualizer.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="about_PixooPS.help.html" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
