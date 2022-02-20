@@ -5,44 +5,60 @@ online version:
 schema: 2.0.0
 ---
 
-# Set-CloudChannel
+# Set-PixooLocation
 
 ## SYNOPSIS
 
-Sets the Cloud Channel of a Pixoo64 device
+Sets the Latitude and Longitude Location of a Pixoo64 device for it to get weather information
 
 ## SYNTAX
 
 ```powershell
-Set-CloudChannel [-Channel] <Int32> [[-DeviceIP] <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-PixooLocation [-Latitude] <Single> [-Longitude] <Single> [[-DeviceIP] <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 
-Sets the Cloud Channel of a Pixoo64 device, similar to Set-Face.
+Sets the Latitude and Longitude Location of a Pixoo64 device for it to get weather information
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 
 ```powershell
-Set-CloudChannel -EqPosition 0
+Set-PixooLocation -Latitude 0 -Longitude 0
 ```
 
 ## PARAMETERS
 
-### -Channel
+### -Latitude
 
-The Eq Position that you wish a Pixoo64 device to be set to, 0 or greater.
-0: Recommended Gallery, 1: Favourite, 2: Subscribed Artists
+The Latitude of a Pixoo64 device
 
 ```yaml
-Type: Int32
+Type: Single
 Parameter Sets: (All)
-Aliases:
+Aliases: lat, lt
 
 Required: True
 Position: 1
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Longitude
+
+The Longitude of a Pixoo64 device
+
+```yaml
+Type: Single
+Parameter Sets: (All)
+Aliases: long, lng, lon, ln
+
+Required: True
+Position: 2
 Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -58,7 +74,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: 2
+Position: 3
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -98,6 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS

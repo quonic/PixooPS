@@ -8,27 +8,31 @@ schema: 2.0.0
 # Invoke-PlayGif
 
 ## SYNOPSIS
+
 Sends a link to a gif, from an http site, to a Pixoo64 device.
 
 ## SYNTAX
 
-```
+```powershell
 Invoke-PlayGif [[-DeviceIP] <String>] [-UrlGif] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+
 Sends a link to a gif, from an http site, to a Pixoo64 device.
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
+
+```powershell
 Invoke-PlayGif -Url "http://example.com/MyAnimation.gif"
 ```
 
 ## PARAMETERS
 
 ### -DeviceIP
+
 The device's IP address, not needed if a Pixoo64 device is already in your ARP cache
 
 ```yaml
@@ -44,6 +48,7 @@ Accept wildcard characters: False
 ```
 
 ### -UrlGif
+
 An http url that points to a gif
 
 ```yaml
@@ -59,6 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
@@ -66,6 +72,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
+
 General notes
 
 ## RELATED LINKS

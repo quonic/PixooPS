@@ -25,7 +25,7 @@ Sets the Visualizer of a Pixoo64 device, similar to Set-Face.
 
 ### EXAMPLE 1
 
-```
+```powershell
 Set-Visualizer -EqPosition 0
 ```
 

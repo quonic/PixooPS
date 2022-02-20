@@ -5,36 +5,35 @@ online version:
 schema: 2.0.0
 ---
 
-# Set-CloudChannel
+# Set-Brightness
 
 ## SYNOPSIS
 
-Sets the Cloud Channel of a Pixoo64 device
+Sets the Brightness of a Pixoo64 device
 
 ## SYNTAX
 
 ```powershell
-Set-CloudChannel [-Channel] <Int32> [[-DeviceIP] <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-Brightness [-Brightness] <Int32> [[-DeviceIP] <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 
-Sets the Cloud Channel of a Pixoo64 device, similar to Set-Face.
+Sets the Brightness of a Pixoo64 device.
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 
 ```powershell
-Set-CloudChannel -EqPosition 0
+Set-Brightness -Brightness 0
 ```
 
 ## PARAMETERS
 
-### -Channel
+### -Brightness
 
-The Eq Position that you wish a Pixoo64 device to be set to, 0 or greater.
-0: Recommended Gallery, 1: Favourite, 2: Subscribed Artists
+The Brightness that you wish a Pixoo64 device to be set to, rangine from 0 to 100
 
 ```yaml
 Type: Int32

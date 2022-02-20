@@ -1,49 +1,49 @@
 ---
 external help file: PixooPS-help.xml
 Module Name: PixooPS
-online version:
+online version: https://go.microsoft.com/fwlink/?LinkID=2097049
 schema: 2.0.0
 ---
 
-# Set-CloudChannel
+# Set-PixooTimeZone
 
 ## SYNOPSIS
 
-Sets the Cloud Channel of a Pixoo64 device
+Sets the TimeZone of a Pixoo64 device
 
 ## SYNTAX
 
 ```powershell
-Set-CloudChannel [-Channel] <Int32> [[-DeviceIP] <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-PixooTimeZone [-TimeZone] <String> [[-DeviceIP] <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 
-Sets the Cloud Channel of a Pixoo64 device, similar to Set-Face.
+Sets the TimeZone of a Pixoo64 device.
 
 ## EXAMPLES
 
 ### EXAMPLE 1
 
 ```powershell
-Set-CloudChannel -EqPosition 0
+Set-PixooTimeZone -TimeZone "GMT-5"
 ```
 
 ## PARAMETERS
 
-### -Channel
+### -TimeZone
 
-The Eq Position that you wish a Pixoo64 device to be set to, 0 or greater.
-0: Recommended Gallery, 1: Favourite, 2: Subscribed Artists
+The TimeZone that you wish a Pixoo64 device to be set to.
+Must be in the GMT format, like GMT-5/GMT+1
 
 ```yaml
-Type: Int32
+Type: String
 Parameter Sets: (All)
 Aliases:
 
 Required: True
 Position: 1
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

@@ -33,12 +33,11 @@ function Get-PixooSetting {
             $res = Invoke-RestMethod -Method Post -Uri "http://$DeviceIP/post" -Body $Body
             if ($res.error_code -eq 0) {
                 Write-Verbose "Success"
-                return $true
+                return $res
             } else {
-                Write-Error "Failed to get settings, Error: $($res.error_code)"
-                return $false
+                throw "Failed to get settings, Error: $($res.error_code)"
+
             }
         }
-        return $false
     }
 }

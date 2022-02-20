@@ -8,25 +8,29 @@ schema: 2.0.0
 # Get-FaceList
 
 ## SYNOPSIS
+
 Get a list of faces from Divoom
 
 ## SYNTAX
 
-```
+```powershell
 Get-FaceList [[-Type] <Object>] [[-Page] <Object>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+
 Get a list of faces from Divoom
 
 ## EXAMPLES
 
 ### EXAMPLE 1
-```
+
+```powershell
 Get-FaceList
 ```
 
 ### EXAMPLE 2
+
 ```
 Get-FaceList -Type Social
 ```
@@ -34,6 +38,7 @@ Get-FaceList -Type Social
 ## PARAMETERS
 
 ### -Type
+
 The type of face to get from Divoom.
 Defaults to normal
 
@@ -50,6 +55,7 @@ Accept wildcard characters: False
 ```
 
 ### -Page
+
 The page number.
 Defaults to 1.
 
@@ -66,6 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
+
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
@@ -73,6 +80,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
+
 General notes
 
 ## RELATED LINKS

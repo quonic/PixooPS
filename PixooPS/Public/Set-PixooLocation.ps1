@@ -1,4 +1,4 @@
-function Set-Location {
+function Set-PixooLocation {
     <#
     .SYNOPSIS
     Sets the Latitude and Longitude Location of a Pixoo64 device for it to get weather information
@@ -16,7 +16,7 @@ function Set-Location {
     The device's IP address, not needed if a Pixoo64 device is already in your ARP cache
 
     .EXAMPLE
-    Set-Location -Latitude 0 -Longitude 0
+    Set-PixooLocation -Latitude 0 -Longitude 0
 
     .NOTES
     General notes
