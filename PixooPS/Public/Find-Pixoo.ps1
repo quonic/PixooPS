@@ -21,13 +21,24 @@ function Find-Pixoo {
     )
     begin {
         function Get-PixooIP {
+            if ($env:PixooIP -and (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -TimeoutSeconds 1 -Quiet)) {
+                return $env:PixooIP
+            }
             $network = (
                 (
                     Get-NetIPInterface -ConnectionState Connected -AddressFamily IPv4 -Dhcp Enabled |
                     Get-NetIPAddress
                 ).IPAddress -split '\.'
             )[0..2] -join '.'
-            (Get-NetNeighbor | Where-Object { $_.IPAddress -like "$network*" -and $_.LinkLayerAddress -like "7C-87-CE*" }).IPAddress
+            $IPList = (Get-NetNeighbor | Where-Object { $_.IPAddress -like "$network*" -and $_.LinkLayerAddress -like "7C-87-CE*" }).IPAddress
+            if ($IPList.Count -eq 0) {
+                1..254 | ForEach-Object {
+                    Test-Connection -Ping -Count 1 -TimeoutSeconds 1 -IPv4 -TargetName "$(($network -split '\.')[0..2] -join '.').$_" -Quiet | Out-Null
+                }
+                return $(Get-NetNeighbor | Where-Object { $_.IPAddress -like "$network*" -and $_.LinkLayerAddress -like "7C-87-CE*" }).IPAddress
+            }else{
+                return $IPList
+            }
         }
     }
     process {
@@ -39,24 +50,18 @@ function Find-Pixoo {
         } else {
             $IPs = Get-PixooIP
             if ($IPs.Count -eq 0) {
-                1..254 | ForEach-Object {
-                    $(($network -split '\.')[0..2])
-                    Test-Connection -Ping -Count 1 -TimeoutSeconds 1 -IPv4 -TargetName "$(($network -split '\.')[0..2]).$_"
-                }
-                $IPs = Get-PixooIP
-                if ($IPs.Count -eq 0) {
-                    throw "Pixoo64 not found on network"
-                }
+                throw "Pixoo64 not found on network"
             }
-            foreach ($ip in $IPs) {
+            foreach ($Ip in $IPs) {
                 try {
                     $get = Invoke-RestMethod -Uri "http://$Ip/get"
                     if ($get -like "*Hello World divoom!*") {
-                        $Ip
+                        $env:PixooIP = $Ip
+                        Write-Information "Pixoo64 found on network at $Ip"
                     }
                     break
                 } catch {
-                    Write-Error $Error[0]
+                    Write-Information "Pixoo64 not found on network at $Ip"
                 }
             }
         }

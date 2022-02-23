@@ -20,4 +20,7 @@
     'PSScriptAnalyzer' = @{
         Version = '1.20.0'
     }
+    'Pode' = @{
+        Version = '2.6.1'
+    }
 }
