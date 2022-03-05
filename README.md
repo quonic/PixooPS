@@ -11,7 +11,7 @@ You can change the current face, turn on and off the screen, display an animated
 ## Requirements
 
 - Any OS that PowerShell can be installed on.
-- PowerShell 5.1 and PowerShell 7 are supported, though PowerShell 7 or greater is recommended.
+- [PowerShell 7](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows)
 
 ## Installation
 
@@ -25,10 +25,10 @@ Install-Module PixooPS -Scope CurrentUser
 
 ```powershell
 $Face = Get-FaceList | Where-Object { $_.Name -like "Big Time" }
-$IP = Find-Pixoo
-Set-Channel -Channel Faces -DeviceIP $IP
+Find-Pixoo # Saves IP address to $env:PixooIP
+Set-Channel -Channel Faces
 Start-Sleep -Seconds 1
-Set-Face -FaceId $Face.ClockId -DeviceIP $IP
+Set-Face -FaceId $Face.ClockId
 ```
 
 ## Documentation

@@ -21,7 +21,7 @@ function Find-Pixoo {
     )
     begin {
         function Get-PixooIP {
-            if ($env:PixooIP -and (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -TimeoutSeconds 1 -Quiet)) {
+            if ($env:PixooIP -and (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -TimeoutSeconds 1 -Quiet -ErrorAction SilentlyContinue)) {
                 return $env:PixooIP
             }
             $network = (
@@ -30,14 +30,12 @@ function Find-Pixoo {
                     Get-NetIPAddress
                 ).IPAddress -split '\.'
             )[0..2] -join '.'
-            $IPList = (Get-NetNeighbor | Where-Object { $_.IPAddress -like "$network*" -and $_.LinkLayerAddress -like "7C-87-CE*" }).IPAddress
-            if ($IPList.Count -eq 0) {
-                1..254 | ForEach-Object {
-                    Test-Connection -Ping -Count 1 -TimeoutSeconds 1 -IPv4 -TargetName "$(($network -split '\.')[0..2] -join '.').$_" -Quiet | Out-Null
+            $IPList = 1..254 | ForEach-Object { "$(($network -split '\.')[0..2] -join '.').$_" }
+            $PassFailList = Test-Connection -ComputerName $IPList -TcpPort 80 -IPv4 -TimeoutSeconds 1 -ErrorAction SilentlyContinue
+            for ($i = 0; $i -lt $PassFailList.Count; $i++) {
+                if ($PassFailList[$i]){
+                    $IPList[$i]
                 }
-                return $(Get-NetNeighbor | Where-Object { $_.IPAddress -like "$network*" -and $_.LinkLayerAddress -like "7C-87-CE*" }).IPAddress
-            }else{
-                return $IPList
             }
         }
     }
@@ -45,6 +43,7 @@ function Find-Pixoo {
         if ($IPAddress) {
             $get = Invoke-RestMethod -Uri "http://$IPAddress/get"
             if ($get -like "*Hello World divoom!*") {
+                $env:PixooIP = $IPAddress
                 $IPAddress
             }
         } else {
@@ -57,6 +56,7 @@ function Find-Pixoo {
                     $get = Invoke-RestMethod -Uri "http://$Ip/get"
                     if ($get -like "*Hello World divoom!*") {
                         $env:PixooIP = $Ip
+                        $Ip
                         Write-Information "Pixoo64 found on network at $Ip"
                     }
                     break

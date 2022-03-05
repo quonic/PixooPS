@@ -7,13 +7,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Released]
 
-## [0.3.1] - 2022-02-23
+## [0.3.1] - 2022-03-05
 
 ### Change
 
 Find-Pixoo finds the device(s) a little more inteligently
 Converts module to a monolithic psm1
 Updates build and test systems
+Changes how Pixoo device are found, looks for open port 80 than by looking for neighboors, this is slower but more reliable.
+Changes required PowerShell version from 5.1 to 7
 
 ### Added
 

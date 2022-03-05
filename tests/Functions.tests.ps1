@@ -1,7 +1,7 @@
 InModuleScope PixooPS {
     Describe "Test Find-Pixoo" {
         Context "Known IP Address" {
-            $MockPixooIP = "192.168.1.199"
+            $MockPixooIP = "192.168.1.234"
             Find-Pixoo -IPAddress $MockPixooIP | Should -BeLike $MockPixooIP
         }
         Context "Unknown IP Address" {
