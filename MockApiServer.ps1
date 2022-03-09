@@ -199,6 +199,7 @@ Start-PodeServer {
                                     @{error_code = 1 } | Write-PodeJsonResponse; break
                                 }
                             } else {
+                                # No recursion
                                 @{error_code = 1 } | Write-PodeJsonResponse; break
                             }
                         }
