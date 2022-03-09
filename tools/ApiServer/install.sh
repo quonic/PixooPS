@@ -1,9 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
 INSTALL_FOLDER=/opt/pode/
 PWSH_EXE=/usr/bin/pwsh
-
-if [ "$EUID" -ne 0 ]
+ID=$(id -u)
+if [ "$ID" -ne 0 ]
 then
     echo "Please run as root"
     exit
