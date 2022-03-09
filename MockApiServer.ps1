@@ -1,5 +1,13 @@
-$Port = 8080
-$Address = "localhost"
+[CmdletBinding()]
+param (
+    [Parameter()]
+    [int]
+    $Port = 8080,
+    [Parameter()]
+    [string]
+    $Address = "localhost"
+)
+
 Start-PodeServer {
     Add-PodeEndpoint -Address $Address -Port $Port -Protocol Http
 
