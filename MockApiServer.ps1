@@ -223,4 +223,4 @@ Start-PodeServer {
         "Hello World divoom!" | Write-PodeTextResponse -ContentType "text/plain"
         "Hello World divoom!" | Out-Default
     }
-} -Verbose -Debug
+}
