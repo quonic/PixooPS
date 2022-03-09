@@ -2,7 +2,7 @@
 param (
     [Parameter()]
     [int]
-    $Port = 8080,
+    $Port = 80,
     [Parameter()]
     [string]
     $Address = "localhost"

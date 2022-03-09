@@ -1,0 +1,11 @@
+[Unit]
+Description=Mock Api Server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/pwsh -c /opt/pode/MockApiServer.ps1 -nop -ep Bypass
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+Alias=mockapi-server.service
