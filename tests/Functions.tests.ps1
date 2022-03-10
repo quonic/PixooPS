@@ -5,7 +5,7 @@ InModuleScope PixooPS {
         }
         Context "Unknown IP Address" {
             Find-Pixoo | Should -BeLike $env:PixooIP
-        }
+        } -Skip # Have to manually test this
     }
     Describe "Test Get-Channel" {
         Context "Get-Channel" {
