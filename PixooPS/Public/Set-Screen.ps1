@@ -24,6 +24,7 @@ function Set-Screen {
     .NOTES
     General notes
     #>
+    [OutputType([boolean])]
     [CmdletBinding(SupportsShouldProcess)]
     param (
         [Parameter()]
