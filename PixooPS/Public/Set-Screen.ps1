@@ -46,9 +46,11 @@ function Set-Screen {
         } | ConvertTo-Json -Compress
         if ($PSCmdlet.ShouldProcess("$DeviceIP", "Turn screen $(if ($On) { "On" }elseif ($Off) { "Off" }else{"Error"})")) {
             $res = Invoke-RestMethod -Method Post -Uri "http://$DeviceIP/post" -Body $Body
-            if ($res.error_code -eq 1) {
-                throw "Pixoo64 returned error_code of $($res.error_code)"
+            if ($res.error_code -ge 1) {
+                Write-Error "Pixoo64 returned error_code of $($res.error_code)"
+                return $false
             }
+            return $true
         }
 
     }

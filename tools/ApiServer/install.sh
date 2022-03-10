@@ -2,10 +2,8 @@
 
 INSTALL_FOLDER=/opt/pode/
 PWSH_EXE=/usr/bin/pwsh
-ID=$(id -u)
 # Check if user is root
-if [ "$ID" -ne 0 ]
-then
+if [[ $(id -u) != 0 ]]; then
     echo "Please run as root"
     exit
 fi

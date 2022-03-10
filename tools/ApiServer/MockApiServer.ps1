@@ -5,8 +5,13 @@ param (
     $Port = 80,
     [Parameter()]
     [string]
-    $Address = "localhost"
+    $Address = "0.0.0.0"
 )
+
+if ((Get-Module Pode -ListAvailable).Count -eq 0){
+    Install-Module Pode -Scope CurrentUser -Force
+}
+Import-Module Pode
 
 Start-PodeServer {
     Add-PodeEndpoint -Address $Address -Port $Port -Protocol Http

@@ -1,4 +1,4 @@
-function Set-PixooTimeZone {
+function Set-PixooTime {
     <#
     .SYNOPSIS
     Sets the Date and Time of a Pixoo64 device

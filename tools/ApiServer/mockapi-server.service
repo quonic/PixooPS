@@ -3,7 +3,7 @@ Description=Mock Api Server
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/pwsh -c /opt/pode/MockApiServer.ps1 -nop -ep Bypass
+ExecStart=/usr/bin/pwsh -nop -ep Bypass -c /opt/pode/MockApiServer.ps1
 Restart=always
 
 [Install]

@@ -22,7 +22,6 @@ function Set-PixooTimeZone {
     [CmdletBinding(SupportsShouldProcess)]
     param (
         [Parameter(Mandatory = $true)]
-        [ValidateRange(0, 100)]
         [string]
         $TimeZone,
         [string]
