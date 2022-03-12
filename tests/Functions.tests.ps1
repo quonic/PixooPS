@@ -11,7 +11,7 @@ InModuleScope PixooPS {
             if ((Test-Connection -TargetName $MockServerIP -Ping -IPv4 -Count 1 -Quiet)) {
                 $MockServerIP
             } else {
-                Write-Error "Not able to connect to Mock API Server."
+                Write-Error "Not able to connect to Mock API Server. `$env:PixooIP = '$env:PixooIP'"
                 Exec { cmd /c exit (1) }
             }
         }
