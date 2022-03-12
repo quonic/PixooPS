@@ -3,12 +3,12 @@ InModuleScope PixooPS {
         $DeviceIP = if (
             [String]::IsNullOrWhiteSpace($env:PixooIP) -and
             [String]::IsNullOrEmpty($env:PixooIP) -and
-            (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1)
+            (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -Quiet)
         ) {
             $env:PixooIP
         } else {
             $MockServerIP = "72.14.184.84"
-            if ((Test-Connection -TargetName $MockServerIP -Ping -IPv4 -Count 1)) {
+            if ((Test-Connection -TargetName $MockServerIP -Ping -IPv4 -Count 1 -Quiet)) {
                 $MockServerIP
             } else {
                 Write-Error "Not able to connect to Mock API Server."
