@@ -2,7 +2,7 @@ InModuleScope PixooPS {
     BeforeAll {
         $DeviceIP = if ($env:PixooIP) {
             $env:PixooIP
-        }else{
+        } else {
             "72.14.184.84"
         }
     }
