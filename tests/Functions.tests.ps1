@@ -1,9 +1,19 @@
 InModuleScope PixooPS {
     BeforeAll {
-        $DeviceIP = if ($env:PixooIP) {
+        $DeviceIP = if (
+            [String]::IsNullOrWhiteSpace($env:PixooIP) -and
+            [String]::IsNullOrEmpty($env:PixooIP) -and
+            (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1)
+        ) {
             $env:PixooIP
         } else {
-            "72.14.184.84"
+            $MockServerIP = "72.14.184.84"
+            if ((Test-Connection -TargetName $MockServerIP -Ping -IPv4 -Count 1)) {
+                $MockServerIP
+            } else {
+                Write-Error "Not able to connect to Mock API Server."
+                Exec { cmd /c exit (1) }
+            }
         }
         # Check if cmdlets exist, if not create them for mocking.
         if ((Get-Command "Get-NetIPInterface").Count -eq 0) { function Get-NetIPInterface { param () } }
