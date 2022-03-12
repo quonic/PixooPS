@@ -21,19 +21,38 @@ function Find-Pixoo {
     )
     begin {
         function Get-PixooIP {
-            if ($env:PixooIP -and (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -TimeoutSeconds 1 -Quiet -ErrorAction SilentlyContinue)) {
+            if (
+                $env:PixooIP -and
+                (
+                    Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -TimeoutSeconds 1 -Quiet -ErrorAction SilentlyContinue
+                )
+            ) {
                 return $env:PixooIP
             }
-            $network = (
+
+            $IP = if ($IsMacOS) {
+                ifconfig | grep 'inet ' | grep -Fv 127.0.0.1 | awk '{print $2}'
+            } elseif ($IsWindows) {
                 (
                     Get-NetIPInterface -ConnectionState Connected -AddressFamily IPv4 -Dhcp Enabled |
                     Get-NetIPAddress
-                ).IPAddress -split '\.'
-            )[0..2] -join '.'
+                ).IPAddress
+            } elseif ($IsLinux) {
+                hostname -I | cut -d' ' -f1
+            }
+
+            # Check to see if the localhost is on a private network
+            if ($IP -Match '(^127\.)|(^192\.168\.)|(^10\.)|(^172\.1[6-9]\.)|(^172\.2[0-9]\.)|(^172\.3[0-1]\.)') {
+                $network = ($IP -split '\.')[0..2] -join '.'
+            } else {
+                Write-Error "Host's IP Address is publicly routable."
+                return ""
+            }
+
             $IPList = 1..254 | ForEach-Object { "$(($network -split '\.')[0..2] -join '.').$_" }
             $PassFailList = Test-Connection -ComputerName $IPList -TcpPort 80 -IPv4 -TimeoutSeconds 1 -ErrorAction SilentlyContinue
             for ($i = 0; $i -lt $PassFailList.Count; $i++) {
-                if ($PassFailList[$i]){
+                if ($PassFailList[$i]) {
                     $IPList[$i]
                 }
             }

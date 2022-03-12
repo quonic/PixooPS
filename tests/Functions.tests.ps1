@@ -5,6 +5,20 @@ InModuleScope PixooPS {
         } else {
             "72.14.184.84"
         }
+        # Check if cmdlets exist, if not create them for mocking.
+        if ((Get-Command "Get-NetIPInterface").Count -eq 0) { function Get-NetIPInterface { param () } }
+        if ((Get-Command "Get-NetIPAddress").Count -eq 0) { function Get-NetIPAddress { param () } }
+        Mock Test-Connection {
+            return $true
+        }
+        Mock Get-NetIPInterface {
+            return $true
+        }
+        Mock Get-NetIPAddress {
+            return [PSCustomObject]@{
+                IPAddress = $DeviceIP
+            }
+        }
     }
 
     Describe "Test Find-Pixoo" {
