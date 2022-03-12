@@ -163,6 +163,4 @@ InModuleScope PixooPS {
             Stop-CountDown -DeviceIP $DeviceIP | Should -Be $true
         }
     }
-
-
 }
