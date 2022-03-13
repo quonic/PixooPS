@@ -33,7 +33,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       name: Test
-    - uses: actions/setup-powershell
+    - uses: actions/setup-pwsh
       name: Set up pwsh
     - run: ./build.ps1 -Task Test -Bootstrap
       shell: pwsh
