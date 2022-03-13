@@ -1,22 +1,23 @@
+$global:DeviceIP = if (
+    [String]::IsNullOrWhiteSpace($env:PixooIP) -and
+    [String]::IsNullOrEmpty($env:PixooIP) -and
+            (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -Quiet)
+) {
+    Write-Host "Using Env: PixooIP, Len($(($env:PixooIP).Length))"
+    $env:PixooIP
+} else {
+    $MockServerIP = "72.14.184.84"
+    if ((Test-Connection -TargetName $MockServerIP -Ping -IPv4 -Count 1 -Quiet)) {
+        Write-Host "Using MockServerIP, Len($(($MockServerIP).Length))"
+        $MockServerIP
+    } else {
+        Write-Error "Not able to connect to Mock API Server. `$env:PixooIP = '$env:PixooIP'"
+        Exec { cmd /c exit (1) }
+    }
+}
+
 InModuleScope PixooPS {
     BeforeAll {
-        $global:DeviceIP = if (
-            [String]::IsNullOrWhiteSpace($env:PixooIP) -and
-            [String]::IsNullOrEmpty($env:PixooIP) -and
-            (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -Quiet)
-        ) {
-            Write-Host "Using Env: PixooIP, Len($(($env:PixooIP).Length))"
-            $env:PixooIP
-        } else {
-            $MockServerIP = "72.14.184.84"
-            if ((Test-Connection -TargetName $MockServerIP -Ping -IPv4 -Count 1 -Quiet)) {
-                Write-Host "Using MockServerIP, Len($(($MockServerIP).Length))"
-                $MockServerIP
-            } else {
-                Write-Error "Not able to connect to Mock API Server. `$env:PixooIP = '$env:PixooIP'"
-                Exec { cmd /c exit (1) }
-            }
-        }
         # Check if cmdlets exist, if not create them for mocking.
         if ((Get-Command "Get-NetIPInterface").Count -eq 0) { function Get-NetIPInterface { param () } }
         if ((Get-Command "Get-NetIPAddress").Count -eq 0) { function Get-NetIPAddress { param () } }
