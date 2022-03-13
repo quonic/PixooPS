@@ -31,7 +31,7 @@ function Get-Face {
         $res = Invoke-RestMethod -Method Post -Uri "http://$DeviceIP/post" -Body $Body
         if ($res) {
             Write-Verbose "Success"
-            return $ret
+            return $res
         } else {
             Write-Error "Failed to set Face, Error: $($res.error_code)"
             return $null
