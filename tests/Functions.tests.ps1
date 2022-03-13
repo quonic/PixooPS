@@ -58,12 +58,12 @@ InModuleScope PixooPS {
     }
     Describe "Test Get-FaceList" {
         Context "Get-FaceList" {
-            Get-FaceList | Should -BeNullOrEmpty
+            Get-FaceList | Should -HaveCount 20
         }
     } -Skip # Actual data may change over time, skipping
     Describe "Test Get-FaceType" {
         Context "Get-FaceType" {
-            Get-FaceType | Should -BeNullOrEmpty
+            Get-FaceType | Should -HaveCount 7
         }
     } -Skip # Actual data may change over time, skipping
     Describe "Test Get-PixooSetting" {
