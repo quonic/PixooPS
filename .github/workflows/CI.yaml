@@ -27,14 +27,21 @@ jobs:
       run: ./build.ps1 -Task Test -Bootstrap
   test-linux:
     environment: Test
-    container:
-      image: mcr.microsoft.com/powershell
     name: Run Tests on Linux
     runs-on: [self-hosted, linux, x64]
     if: "!contains(github.event.head_commit.message, 'ci skip')"
     steps:
     - uses: actions/checkout@v1
       name: Test
+    - run: |
+        apt-get update
+        apt-get install -y wget apt-transport-https software-properties-common
+        wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
+        dpkg -i packages-microsoft-prod.deb
+        rm -rf packages-microsoft-prod.deb
+        apt-get update
+        apt-get install -y powershell
+      name: Install PowerShell
     - run: ./build.ps1 -Task Test -Bootstrap
       shell: pwsh
       name: Run Build Task Test with Bootstrap
