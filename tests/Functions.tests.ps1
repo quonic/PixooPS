@@ -5,10 +5,12 @@ InModuleScope PixooPS {
             [String]::IsNullOrEmpty($env:PixooIP) -and
             (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -Quiet)
         ) {
+            Write-Host "Using Env: PixooIP, Len($(($env:PixooIP).Length))"
             $env:PixooIP
         } else {
             $MockServerIP = "72.14.184.84"
             if ((Test-Connection -TargetName $MockServerIP -Ping -IPv4 -Count 1 -Quiet)) {
+                Write-Host "Using MockServerIP, Len($(($MockServerIP).Length))"
                 $MockServerIP
             } else {
                 Write-Error "Not able to connect to Mock API Server. `$env:PixooIP = '$env:PixooIP'"
@@ -33,9 +35,11 @@ InModuleScope PixooPS {
 
     Describe "Test Find-Pixoo" {
         Context "Known IP Address" {
+            [String]::IsNullOrWhiteSpace($DeviceIP) -and [String]::IsNullOrEmpty($DeviceIP) | Should -BeTrue
             Find-Pixoo -IPAddress $DeviceIP | Should -BeLike $DeviceIP
         }
         Context "Unknown IP Address" {
+            [String]::IsNullOrWhiteSpace($DeviceIP) -and [String]::IsNullOrEmpty($DeviceIP) | Should -BeTrue
             Find-Pixoo | Should -BeLike $DeviceIP
         } -Skip # Have to manually test this
     }
