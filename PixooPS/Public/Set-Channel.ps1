@@ -55,7 +55,7 @@ function Set-Channel {
         } | ConvertTo-Json -Compress
         if ($PSCmdlet.ShouldProcess("$DeviceIP", "Set Channel to $Index")) {
             $res = Invoke-RestMethod -Method Post -Uri "http://$DeviceIP/post" -Body $Body
-            if ($res.error_code -and $res.error_code -eq 0) {
+            if ($res.error_code -eq 0) {
                 Write-Verbose "Success"
                 return $true
             } else {
