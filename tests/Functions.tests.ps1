@@ -86,7 +86,7 @@ InModuleScope PixooPS {
     }
     Describe "Test Invoke-PlayGif" {
         Context "Invoke-PlayGif" {
-            Invoke-PlayGif -DeviceIP $DeviceIP -UrlGif "http://$DeviceIP/test.gif" | Should -Be $true
+            Invoke-PlayGif -DeviceIP $DeviceIP -UrlGif "http://$DeviceIP/test.gif" | Should -Be @(100, $true)
         }
     }
     Describe "Test Reset-CountDown" {
