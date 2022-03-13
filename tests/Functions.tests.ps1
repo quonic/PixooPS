@@ -1,6 +1,6 @@
 $global:DeviceIP = if (
-    [String]::IsNullOrWhiteSpace($env:PixooIP) -and
-    [String]::IsNullOrEmpty($env:PixooIP) -and
+    -not [String]::IsNullOrWhiteSpace($env:PixooIP) -and
+    -not [String]::IsNullOrEmpty($env:PixooIP) -and
     $env:PixooIP -and
     (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -Quiet)
 ) {
@@ -37,11 +37,11 @@ InModuleScope PixooPS {
 
     Describe "Test Find-Pixoo" {
         Context "Known IP Address" {
-            [String]::IsNullOrWhiteSpace($DeviceIP) -and [String]::IsNullOrEmpty($DeviceIP) | Should -BeTrue
+            [String]::IsNullOrWhiteSpace($DeviceIP) -and [String]::IsNullOrEmpty($DeviceIP) | Should -BeFalse
             Find-Pixoo -IPAddress $DeviceIP | Should -BeLike $DeviceIP
         }
         Context "Unknown IP Address" {
-            [String]::IsNullOrWhiteSpace($DeviceIP) -and [String]::IsNullOrEmpty($DeviceIP) | Should -BeTrue
+            [String]::IsNullOrWhiteSpace($DeviceIP) -and [String]::IsNullOrEmpty($DeviceIP) | Should -BeFalse
             Find-Pixoo | Should -BeLike $DeviceIP
         } -Skip # Have to manually test this
     }
