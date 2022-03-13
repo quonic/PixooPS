@@ -1,7 +1,8 @@
 $global:DeviceIP = if (
     [String]::IsNullOrWhiteSpace($env:PixooIP) -and
     [String]::IsNullOrEmpty($env:PixooIP) -and
-            (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -Quiet)
+    $env:PixooIP -and
+    (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -Quiet)
 ) {
     Write-Host "Using Env: PixooIP, Len($(($env:PixooIP).Length))"
     $env:PixooIP
