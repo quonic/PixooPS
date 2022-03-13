@@ -42,14 +42,14 @@ function Invoke-PlayGif {
                 } | ConvertTo-Json -Compress
 
                 $res = Invoke-RestMethod -Method Post -Uri "http://$DeviceIP/post" -Body $Body
-                if ($res.error_code -and $res.error_code -eq 0) {
+                if ($res.error_code -eq 0) {
                     Write-Verbose "Success"
                     $Body = [PSCustomObject]@{
                         Command = "Draw/GetHttpGifId"
                     } | ConvertTo-Json -Compress
 
                     $res = Invoke-RestMethod -Method Post -Uri "http://$DeviceIP/post" -Body $Body
-                    if ($res.error_code -and $res.error_code -eq 0) {
+                    if ($res.error_code -eq 0) {
                         $res.PicId
 
                         Write-Verbose "Success"
