@@ -1,17 +1,37 @@
 name: CI
 on: [push, pull_request]
 jobs:
-  test:
+  # test-windows:
+  #   environment: Test
+  #   name: Run Tests on Windows
+  #   runs-on: ${{ matrix.os }}
+  #   if: "!contains(github.event.head_commit.message, 'ci skip')"
+  #   strategy:
+  #     fail-fast: false
+  #     matrix:
+  #       os: [windows-latest]
+  #   steps:
+  #   - uses: actions/checkout@v1
+  #   - name: Test
+  #     shell: pwsh
+  #     run: ./build.ps1 -Task Test -Bootstrap
+  test-mac:
     environment: Test
-    name: Run Tests
-    runs-on: ${{ matrix.os }}
+    name: Run Tests on macOS
+    runs-on: [self-hosted, macOS, x64]
     if: "!contains(github.event.head_commit.message, 'ci skip')"
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest]
     steps:
     - uses: actions/checkout@v1
     - name: Test
       shell: pwsh
-      run: $env:PixooIP = ${{secrets.PIXOOIP}};./build.ps1 -Task Test -Bootstrap
+      run: ./build.ps1 -Task Test -Bootstrap
+  test-linux:
+    environment: Test
+    name: Run Tests on Linux
+    runs-on: [self-hosted, linux, x64]
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
+    steps:
+    - uses: actions/checkout@v1
+    - name: Test
+      shell: pwsh
+      run: ./build.ps1 -Task Test -Bootstrap
