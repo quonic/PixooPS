@@ -4,7 +4,6 @@ $global:DeviceIP = if (
     $env:PixooIP -and
     (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -Quiet)
 ) {
-    Write-Host "Using Env: PixooIP, Len($(($env:PixooIP).Length))"
     $env:PixooIP
 } else {
     $MockServerIP = "72.14.184.84"
@@ -59,12 +58,12 @@ InModuleScope PixooPS {
     }
     Describe "Test Get-FaceList" {
         Context "Get-FaceList" {
-            Get-FaceList -DeviceIP $DeviceIP | Should -BeNullOrEmpty
+            Get-FaceList | Should -BeNullOrEmpty
         }
     } -Skip # Actual data may change over time, skipping
     Describe "Test Get-FaceType" {
         Context "Get-FaceType" {
-            Get-FaceType -DeviceIP $DeviceIP | Should -BeNullOrEmpty
+            Get-FaceType | Should -BeNullOrEmpty
         }
     } -Skip # Actual data may change over time, skipping
     Describe "Test Get-PixooSetting" {
