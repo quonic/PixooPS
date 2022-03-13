@@ -1,6 +1,6 @@
 InModuleScope PixooPS {
     BeforeAll {
-        $DeviceIP = if (
+        $global:DeviceIP = if (
             [String]::IsNullOrWhiteSpace($env:PixooIP) -and
             [String]::IsNullOrEmpty($env:PixooIP) -and
             (Test-Connection -TargetName $env:PixooIP -Ping -IPv4 -Count 1 -Quiet)
