@@ -6,10 +6,9 @@ $global:DeviceIP = if (
 ) {
     $env:PixooIP
 } else {
-    $MockServerIP = "72.14.184.84"
-    if ((Test-Connection -TargetName $MockServerIP -Ping -IPv4 -Count 1 -Quiet)) {
-        Write-Host "Using MockServerIP, Len($(($MockServerIP).Length))"
-        $MockServerIP
+    if ((Test-Connection -TargetName $env:MockServerIP -Ping -IPv4 -Count 1 -Quiet)) {
+        Write-Host "Using MockServerIP, Len($(($env:MockServerIP).Length))"
+        $env:MockServerIP
     } else {
         Write-Error "Not able to connect to Mock API Server. `$env:PixooIP = '$env:PixooIP'"
         Exec { cmd /c exit (1) }
